@@ -1,0 +1,42 @@
+EFFIDIC - Stage Data Engineer
+
+Effidic, cabinet de conseil spécialisé en transformation digitale, recherche un(e) stagiaire Data Engineer pour rejoindre son équipe Data à Trélazé (49800).
+
+ENTREPRISE :
+Effidic accompagne les entreprises dans leur transition numérique avec un focus sur la Modern Data Stack et l'analytique avancée.
+
+Adresse : 11 Rue du Grand Launay, 49800 Trélazé
+
+MISSIONS :
+- Concevoir et développer des pipelines de données avec dbt et BigQuery
+- Participer à la mise en place d'architectures ELT scalables
+- Automatiser les workflows avec Apache Airflow
+- Collaborer avec les équipes métier pour définir les KPIs
+- Contribuer à la documentation technique et aux tests de données
+- Optimiser les performances des requêtes SQL
+
+PROFIL RECHERCHÉ :
+- Formation en Data Engineering, informatique ou équivalent
+- Maîtrise de Python et SQL
+- Connaissance de dbt, BigQuery et de la Modern Data Stack
+- Expérience avec Apache Airflow (un plus)
+- Capacité à travailler en équipe et à communiquer clairement
+- Autonomie et rigueur
+
+STACK TECHNIQUE :
+- Cloud : Google Cloud Platform (BigQuery, Cloud Storage)
+- Transformation : dbt (Data Build Tool)
+- Orchestration : Apache Airflow
+- Langages : Python, SQL
+- Outils : Git, Docker, Looker Studio
+
+AVANTAGES :
+- Environnement de travail moderne et stimulant
+- Accompagnement et mentorat par des experts Data
+- Possibilité de télétravail partiel
+- Indemnités de stage compétitives
+
+DURÉE : 4 à 6 mois
+DÉBUT : Dès que possible
+
+Pour postuler, envoyez CV et lettre de motivation à recrutement@effidic.fr

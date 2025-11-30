@@ -1,0 +1,35 @@
+# Credentials and API Keys
+.env
+credentials.json
+*.json
+
+# Generated PDFs and LaTeX files
+candidatures_genere/
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

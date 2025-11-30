@@ -1,0 +1,54 @@
+\documentclass[11pt,a4paper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\geometry{margin=2.5cm}
+
+% Informations de l'expéditeur
+\signature{\VAR{user_name}}
+\address{%
+\VAR{user_address}\\
+\VAR{user_phone}\\
+\VAR{user_email}
+}
+
+\begin{document}
+
+\begin{letter}{%
+À l'attention du Service Recrutement\\
+\VAR{company_name}\\
+\VAR{company_address}
+}
+
+\opening{Madame, Monsieur,}
+
+Je me permets de vous adresser ma candidature pour le poste de \textbf{\VAR{job_title}} au sein de \VAR{company_name}.
+
+\VAR{ai_generated_paragraph}
+
+Actuellement étudiant en Data Engineering, je dispose d'une solide expérience pratique acquise notamment lors de mon stage chez LIKA Consulting, où j'ai pu développer des pipelines ELT en utilisant la Modern Data Stack (dbt, BigQuery, Apache Airflow). Cette expérience m'a permis de maîtriser l'ensemble du cycle de traitement de données, de l'extraction à la visualisation.
+
+Ma stack technique inclut :
+\begin{itemize}
+    \item \textbf{Langages} : Python, SQL
+    \item \textbf{Outils Data} : dbt, BigQuery, Apache Airflow, PostgreSQL
+    \item \textbf{Cloud \& DevOps} : Google Cloud Platform, Docker, Git
+\end{itemize}
+
+\BLOCK{if keywords}
+Je note que votre offre mentionne des compétences clés telles que \textbf{\VAR{keywords[0]}}, \textbf{\VAR{keywords[1]}} et \textbf{\VAR{keywords[2]}}, domaines dans lesquels j'ai une expérience concrète.
+\BLOCK{endif}
+
+Je serais ravi de pouvoir discuter avec vous de la manière dont mon profil pourrait répondre à vos besoins et contribuer au succès de vos projets data.
+
+Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+\closing{Cordialement,}
+
+\end{letter}
+
+\end{document}

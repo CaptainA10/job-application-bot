@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\geometry{margin=2cm}
+\pagestyle{empty}
+
+% Custom colors
+\definecolor{maincolor}{RGB}{0, 102, 204}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{maincolor}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries \VAR{user_name}}\\[0.3cm]
+    {\large Étudiant Data Engineer}\\[0.2cm]
+    \VAR{user_email} | \VAR{user_phone}\\
+    LinkedIn: \VAR{user_linkedin} | GitHub: \VAR{user_github}
+\end{center}
+
+\vspace{0.5cm}
+
+% Profile
+\section*{PROFIL}
+\VAR{ai_generated_profile}
+
+\BLOCK{if keywords}
+\textbf{Compétences recherchées :} \VAR{', '.join(keywords)}
+\BLOCK{endif}
+
+% Experience
+\section*{EXPÉRIENCE PROFESSIONNELLE}
+
+\subsection*{Stage Data Engineer | LIKA Consulting}
+\textit{Date de début -- Date de fin}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Conception et développement de pipelines ELT avec \textbf{dbt} et \textbf{BigQuery}
+    \item Orchestration des workflows avec \textbf{Apache Airflow}
+    \item Modélisation de données dimensionnelles (schémas en étoile)
+    \item Optimisation des requêtes SQL pour améliorer les performances
+    \item Création de tableaux de bord en collaboration avec les équipes métier
+\end{itemize}
+
+% Projects
+\section*{PROJETS ACADÉMIQUES \& PERSONNELS}
+
+\subsection*{Pipeline ELT Modern Data Stack}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Architecture complète : extraction de données API, transformation avec dbt, chargement BigQuery
+    \item Automatisation avec Apache Airflow et Docker
+    \item Tests de données et documentation automatisée
+\end{itemize}
+
+\subsection*{Bot d'Automatisation de Candidatures}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Outil Python utilisant l'API Gemini pour personnaliser CV et lettres
+    \item Génération automatique de PDF avec LaTeX et Jinja2
+    \item Intégration Google Sheets pour le suivi des candidatures
+\end{itemize}
+
+% Skills
+\section*{COMPÉTENCES TECHNIQUES}
+
+\textbf{Langages :} Python, SQL, Bash\\
+\textbf{Data Engineering :} dbt, Apache Airflow, BigQuery, PostgreSQL, MySQL\\
+\textbf{Cloud :} Google Cloud Platform (BigQuery, Cloud Storage, Composer)\\
+\textbf{Outils :} Docker, Git, GitHub Actions, Jinja2\\
+\textbf{Visualisation :} Looker Studio, Power BI (notions)
+
+% Education
+\section*{FORMATION}
+
+\subsection*{Master Data Engineering}
+\textit{École/Université -- Année}
+\begin{itemize}[leftmargin=*,noitemsep]
+    \item Spécialisation : Modern Data Stack, Cloud Computing, Big Data
+    \item Projets : Pipelines ETL/ELT, Data Warehousing, Machine Learning Engineering
+\end{itemize}
+
+% Languages
+\section*{LANGUES}
+
+Français : Langue maternelle\\
+Anglais : Professionnel (B2/C1)
+
+\end{document}
